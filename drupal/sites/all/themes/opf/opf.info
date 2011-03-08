@@ -1,0 +1,11 @@
+name = opf
+description = Open Planets Foundation Custom Theme
+core = 6.x
+base theme = blueprint
+stylesheets[screen,projection][] = opf.css
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer

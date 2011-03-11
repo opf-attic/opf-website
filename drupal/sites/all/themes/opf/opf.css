@@ -146,7 +146,7 @@ body { background-color: #dee6e8; }
 .block .item-list ul li {
 	list-style-type:none;
 	list-style:none;
-	line-height:0.95em;
+	line-height:1em;
 	margin-bottom:0.55em;
 }
 .block li a {

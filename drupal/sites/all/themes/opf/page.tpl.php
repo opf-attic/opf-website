@@ -9,6 +9,7 @@
 	<?php print $meta; ?>
   <?php print $head; ?>
   <?php print $styles; ?>
+  <link rel="stylesheet" href="<?php print $path; ?>../blueprint/css/ie.css" type="text/css" media="screen, projection">
   <!--[if lte IE 7]>
     <link rel="stylesheet" href="<?php print $path; ?>../blueprint/css/ie.css" type="text/css" media="screen, projection">
   	<link href="<?php print $path; ?>../blueprint/css/ie.css" rel="stylesheet"  type="text/css"  media="screen, projection" />
@@ -34,17 +35,18 @@
 <body class="<?php print $body_classes; ?>">
 
 <div id="page-container" class="container">
+  <?php if (isset($secondary_links)) : ?>
+    <?php print theme('links', $secondary_links, array('id' => 'subnav', 'class' => 'links')) ?>
+  <?php endif; ?>
+
   <div id="header" class="<?php print $header_classes; ?>">
-    <h1 id="logo">
-      <a title="<?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?>" href="<?php print url(); ?>"><?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?></a>
-    </h1>
     <?php print $header; ?>
     <?php if (isset($primary_links)) : ?>
       <?php print theme('links', $primary_links, array('id' => 'nav', 'class' => 'links')) ?>
     <?php endif; ?>
-    <?php if (false && isset($secondary_links)) : ?>
-      <?php print theme('links', $secondary_links, array('id' => 'subnav', 'class' => 'links')) ?>
-    <?php endif; ?>    
+    <h1 id="logo">
+      <a title="<?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?>" href="<?php print url(); ?>"><?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?></a>
+    </h1>
   </div>
 
   <?php if ($left): ?>

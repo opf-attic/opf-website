@@ -26,5 +26,11 @@
     print '<div class="node-links">'. $links .'</div>';
   }
 ?>
+
+<?php if ($page != 0): ?>
+<div class="node-content-bottom">
 <?php print $content_bottom ?>
+</div>
+<?php endif; ?>
+
 </div>

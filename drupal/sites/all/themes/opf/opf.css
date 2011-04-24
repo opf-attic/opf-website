@@ -173,10 +173,15 @@ div.container { margin: 0 auto; }
 }
 
 .col-center {
-  margin-left: 32px;  
+  margin-left: 28px;  
 }
-col-left, .col-right {
+.col-right {
   margin-left: 17px;
+  margin-right: 0;
+}
+.col-left {
+  margin-left: 22px;
+  margin-right: 0;
 }
 
 /* right column blocks (defaults to blue background) */

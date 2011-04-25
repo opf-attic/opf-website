@@ -221,7 +221,11 @@ p {
 .col-center .node .node-links .links a {
 	font-size:0.9em;
 }
+.col-center .comment .picture {
+  margin-right: 0.35em;
+}
 
+/* margins */
 .col-center {
   margin-left: 28px;  
 }

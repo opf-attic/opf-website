@@ -9,7 +9,10 @@
     font-style: normal;
 }
 
-body { font-family: 'Nimbus Sans', 'Nimbus Sans L', FreeSans, 'Liberation Sans', 'Dejavu Sans Condensed', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans-serif }
+body { 
+  font-size: 80%;
+  font-family: 'Nimbus Sans', 'Nimbus Sans L', FreeSans, 'Liberation Sans', 'Dejavu Sans Condensed', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+}
 a { text-decoration:none; }
 a:hover { text-decoration:underline; }
 

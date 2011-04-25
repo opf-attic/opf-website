@@ -34,6 +34,7 @@ div.container { margin: 0 auto; }
 
 /* top navigation (there is the small nav and the larger subnav) */
 #header {
+  clear: none;
   background-color: #fff; 
 }
 #header a {
@@ -57,31 +58,13 @@ div.container { margin: 0 auto; }
 	padding-top: 24px;
 	clear: both;
 }
-#subnav {
-  float: right;
-  background-color: #DAF0F6;
-  background-color: #B0DEED;
-  padding: 4px 2px;
-  font-size: 12px;
-  margin-right: 10px;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-	border:1px solid #9BD5E8;
-}
-#subnav a {
-	color: #146B8A;
-}
 #header #snav li {
 	padding-right:15px;
 }
 #header #nav li a {
 	display:inline-block;
-	height:30;
-	padding:3px 9px 3px 9px;
+	height:21px;
+	padding:3px 6px 3px 6px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -106,6 +89,30 @@ div.container { margin: 0 auto; }
 	background-color:#439fbd;
 	border: 1px solid #177ba0;
 	color:#fff;
+}
+
+#subnav {
+  float: right;
+  background-color: #DAF0F6;
+  background-color: #B0DEED;
+  background-color: #eee;
+  font-size: 11px;
+  margin-right: 20px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+	border:1px solid #9BD5E8;
+	border:1px solid #d8d8d8;
+}
+#subnav a {
+	color: #146B8A;
+	color: #666;
+}
+#subnav li {
+	padding: 5px;
 }
 
 /* center column styling (not within a node or node list) */

@@ -65,13 +65,13 @@ div.container { margin: 0 auto; }
 	display:inline-block;
 	height:21px;
 	padding:3px 6px 3px 6px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-  behavior:url('border-radius.htc');
 	background-color:#9dd6e9;
 	color: #146B8A;
 	border: 1px solid #177ba0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+  behavior:url(border-radius.htc);
 } 
 #header #nav li a:hover {
 	background-color:#439fbd;
@@ -99,15 +99,15 @@ div.container { margin: 0 auto; }
   background-color: #eee;
   font-size: 11px;
   margin-right: 20px;
+	border:1px solid #9BD5E8;
+	border:1px solid #d8d8d8;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomright: 5px;
   -moz-border-radius-bottomleft: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-	border:1px solid #9BD5E8;
-	border:1px solid #d8d8d8;
-  behavior:url('border-radius.htc');
+  behavior:url(border-radius.htc);
 }
 #subnav a {
 	color: #146B8A;
@@ -198,12 +198,12 @@ div.container { margin: 0 auto; }
 	position: relative;
 	background-color:#B0DEED;
 	border:1px solid #9BD5E8;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-  behavior:url('border-radius.htc');
 	padding:7px;
-//	margin-right: 10px;
+	//margin-right: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior:url(border-radius.htc);
 }
 
 /* left column blocks (defaults to white background) */
@@ -211,12 +211,12 @@ div.container { margin: 0 auto; }
 	position: relative;
 	background-color:#fff;
 	border:1px solid #B0DEED;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-  behavior:url('border-radius.htc');
 	padding:7px;
-//	margin-left: 10px;
+  //margin-left: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+  behavior:url(border-radius.htc);
 }
 
 /* general sidebar block styling */
@@ -225,20 +225,21 @@ div.container { margin: 0 auto; }
 }
 .block .item-list ul li {
 	list-style:none;
-	line-height:1em;
+	line-height:1.3em;
 	margin-bottom:0.55em;
 }
 ul li, ul.menu li, .item-list ul li, li.leaf {
   list-style-image: none !important;
 	list-style-type:disc;
 }
+.block a {
+	color:#146B8A;
+}
 .block li a {
-	color:#101010;
-	font-size:0.9em;
+	font-size:1.1em;
 }
 .block .more-link a {
-	color:#333;
-	font-size:0.75em;
+	font-size:0.85em;
 	font-weight:bold;
 	text-transform: uppercase;
 }
@@ -255,26 +256,14 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 	background-color:#B0DEED;
 	border:0;
 }
-.col-left .view-content {
-	font-size:0.85em;
-}
-.col-left .view-header a.blog-link {
-	font-family: "NewRegular";
-	font-size: 1.0em;
-	text-transform: uppercase;
-	text-decoration: none;
-	color:#333;
-}
-.col-left .view-content a:visited {
-	color:#666;
+.col-left, .col-right {
+	font-size:0.95em;
 }
 .col-left .view-content .picture img {
 	border: 1px solid #999;
-	margin-top:-10px;
-	margin-bottom: 20px;
-	margin-left:2px;
+	background-color: white;
+	padding: 2px;
 }
-
 
 /* sidebar block overrides: outline/ white background */
 .col-right .block-forum {
@@ -284,14 +273,66 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 
 /* Sticky items should be displayed differently */
 .sticky {
+  background-color: #e6f4f9;
+  border: none !important;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  behavior:url('border-radius.htc');
-  background-color: #e6f4f9;
-  border: none !important;
+  behavior:url(border-radius.htc);
 }
 .sticky div, .sticky h2 {
   padding: 5px 10px;
 }
 
+/* the recent bloggers block */
+.view-bloggers .views-row {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #B0DEED;
+  clear: both;
+}
+.view-bloggers .views-row-first {
+  padding-top: 0;
+}
+.view-bloggers .views-row-last {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.view-bloggers .views-row .picture {
+  float: right;
+  margin-left: 5px;
+}
+.view-bloggers .views-field-title, .views-field-name {
+  display: inline;
+}
+.view-bloggers .views-field-name:before {
+  content: ' by ';
+}
+.view-bloggers .views-field-totalcount {
+  padding-top: 0.3em;
+}
+
+/* the recent comments block */
+.view-comments-recent .views-row {
+  padding: 0.3em 0 0.5em 0;
+  border-bottom: 1px solid #146B8A;
+  clear: both;
+}
+.view-comments-recent .views-row-first {
+  padding-top: 0;
+}
+.view-comments-recent .views-row-last {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.view-comments-recent .views-field-comment {
+  padding-top: 0.3em;
+}
+.view-comments-recent .views-field-timestamp {
+  padding-top: 0.3em;
+  text-align: right;
+}
+
+.views-field-field-date-value {
+  padding: 0 0 0.5em 0;
+  text-align: right;  
+}

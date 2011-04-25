@@ -32,9 +32,9 @@ function opf_preprocess_page(&$vars) {
   // determine layout
   // 3 columns
   if ($vars['layout'] == 'both') {
-    $vars['left_classes'] = 'col-left span-5';
+    $vars['left_classes'] = 'col-left span-6';
     $vars['right_classes'] = 'col-right span-6 last';
-    $vars['center_classes'] = 'col-center span-11';
+    $vars['center_classes'] = 'col-center span-10';
     $vars['body_classes'] .= ' col-3';
   }
   // 2 columns

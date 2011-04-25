@@ -8,9 +8,40 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'HighwayGothicRegular';
+    src: url('hwygoth-webfont.eot');
+    src: url('hwygoth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hwygoth-webfont.woff') format('woff'),
+         url('hwygoth-webfont.ttf') format('truetype'),
+         url('hwygoth-webfont.svg#HighwayGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HighwayGothicWideRegular';
+    src: url('hwygwde-webfont.eot');
+    src: url('hwygwde-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hwygwde-webfont.woff') format('woff'),
+         url('hwygwde-webfont.ttf') format('truetype'),
+         url('hwygwde-webfont.svg#HighwayGothicWideRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ExpresswayRegular';
+    src: url('expressway_rg-webfont.eot');
+    src: url('expressway_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('expressway_rg-webfont.woff') format('woff'),
+         url('expressway_rg-webfont.ttf') format('truetype'),
+         url('expressway_rg-webfont.svg#ExpresswayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body { 
-  font-size: 80%;
+  font-size: 12px;
   font-family: 'Nimbus Sans', 'Nimbus Sans L', FreeSans, 'Liberation Sans', 'Dejavu Sans Condensed', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
 }
 a { text-decoration:none; }
@@ -149,7 +180,6 @@ div.container { margin: 0 auto; }
 
 /* basic node styling (within content area) */
 .col-center .node {
-  text-align: justify;
 	margin: 0 0 2.5em;
 	padding: 0 0 1.917em;
 }
@@ -173,6 +203,12 @@ div.container { margin: 0 auto; }
 }
 .col-center .node h6 {
   font-family: "NewRegular";
+}
+p {
+  margin-bottom: 0.85em;
+}
+.col-center .node .meta {
+  margin-bottom: 0.75em;
 }
 .col-center .node .meta .submitted {
 	color:#aaa;
@@ -317,6 +353,10 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 }
 .view-bloggers .views-field-totalcount, .view-bloggers .views-field-uid {
   padding-top: 0.3em;
+}
+.view-bloggers .views-field-timestamp {
+  display: inline;
+  color: red;
 }
 
 /* the recent comments block */

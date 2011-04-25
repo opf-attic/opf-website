@@ -307,7 +307,7 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 .view-bloggers .views-field-name:before {
   content: ' by ';
 }
-.view-bloggers .views-field-totalcount {
+.view-bloggers .views-field-totalcount, .view-bloggers .views-field-uid {
   padding-top: 0.3em;
 }
 
@@ -332,6 +332,7 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
   text-align: right;
 }
 
+/* the upcoming events block */
 .views-field-field-date-value {
   padding: 0 0 0.5em 0;
   text-align: right;  

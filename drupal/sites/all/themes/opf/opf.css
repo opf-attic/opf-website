@@ -104,7 +104,7 @@ div.container { margin: 0 auto; }
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-  behavior:url(border-radius.htc);
+	behavior: url(border-radius.htc);
 } 
 #header #nav li a:hover {
 	background-color:#439fbd;
@@ -140,7 +140,7 @@ div.container { margin: 0 auto; }
   -moz-border-radius-bottomleft: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  behavior:url(border-radius.htc);
+	behavior: url(border-radius.htc);
 }
 #subnav a {
 	color: #146B8A;
@@ -248,7 +248,7 @@ p {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  behavior:url(border-radius.htc);
+	behavior: url(border-radius.htc);
 }
 
 /* left column blocks (defaults to white background) */
@@ -261,7 +261,7 @@ p {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-  behavior:url(border-radius.htc);
+	behavior: url(border-radius.htc);
 }
 
 /* general sidebar block styling */
@@ -326,7 +326,7 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  behavior:url(border-radius.htc);
+	behavior: url(border-radius.htc);
 }
 .sticky div, .sticky h2 {
   padding: 5px 10px;

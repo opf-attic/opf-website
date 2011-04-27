@@ -336,6 +336,8 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 .view-bloggers .views-row {
   padding-bottom: 1em;
   border-bottom: 1px solid #B0DEED;
+}
+.view-bloggers .views-field-uid {
   clear: both;
 }
 .view-bloggers .views-row-first {
@@ -349,8 +351,8 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
   float: right;
   margin-left: 5px;
 }
-.view-bloggers .views-field-title, .views-field-name {
-  display: inline;
+.view-bloggers .views-field-name {
+  margin-top: 0.5em;
 }
 .view-bloggers .views-field-name:before {
   content: ' by ';

@@ -58,7 +58,7 @@ function opf_preprocess_page(&$vars) {
     $vars['body_classes'] .= ' col-1 ';
   }
 
-  $vars['header_classes'] .= ' span-22 ';
+  $vars['header_classes'] .= ' span-23 ';
 }
 
 function opf_preprocess_node (&$vars) {

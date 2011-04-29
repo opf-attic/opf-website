@@ -51,6 +51,7 @@ a:hover { text-decoration:underline; }
 h1 {
   padding-top: 16px;
   padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 h1 a{
 	width: 128px;
@@ -82,18 +83,13 @@ div.container { margin: 0 auto; }
 
 #header #nav { 
   float: right;
-/*	display:block; 
-	width:550px;
-	position: relative;
-	top: -10px;
-	left: 350px;
-	*/
 	font-size: 16px;
 	padding-top: 24px;
 	clear: both;
+	margin-right: 0;
 }
 #header #snav li {
-	padding-right:15px;
+	padding-right:0px;
 }
 #header #nav li a {
 	display:inline-block;
@@ -123,6 +119,11 @@ div.container { margin: 0 auto; }
 	background-color:#439fbd;
 	border: 1px solid #177ba0;
 	color:#fff;
+}
+
+#header .breadcrumb {
+  padding-left: 4px;
+  margin-bottom: 0;
 }
 
 #subnav {

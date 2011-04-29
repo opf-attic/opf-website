@@ -35,18 +35,29 @@
 <body class="<?php print $body_classes; ?>">
 
 <div id="page-container" class="container">
-  <?php if (isset($secondary_links)) : ?>
-    <?php print theme('links', $secondary_links, array('id' => 'subnav', 'class' => 'links')) ?>
-  <?php endif; ?>
-
   <div id="header" class="<?php print $header_classes; ?>">
-    <?php print $header; ?>
+	<div class="span-6">
+     <h1 id="logo">
+      <a title="<?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?>" href="<?php print url(); ?>"><?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?></a>
+     </h1>
+    </div>
+    <div class="span-17 last">
+	  <?php if (isset($secondary_links)) : ?>
+	    <?php print theme('links', $secondary_links, array('id' => 'subnav', 'class' => 'links')) ?>
+	  <?php endif; ?>
+
     <?php if (isset($primary_links)) : ?>
       <?php print theme('links', $primary_links, array('id' => 'nav', 'class' => 'links')) ?>
     <?php endif; ?>
-    <h1 id="logo">
-      <a title="<?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?>" href="<?php print url(); ?>"><?php print $site_name; ?><?php if ($site_slogan != '') print ' &ndash; '. $site_slogan; ?></a>
-    </h1>
+    </div>
+    <div class="span-20">
+      <?php
+  if ($breadcrumb != '') {
+    print $breadcrumb;
+  }
+      ?>
+	<?php print $header; ?>
+	</div>
   </div>
 
   <?php if ($left): ?>
@@ -55,10 +66,6 @@
   
   <div class="<?php print $center_classes; ?>">
     <?php
-      if ($breadcrumb != '') {
-        print $breadcrumb;
-      }
-
       if ($tabs != '') {
         print '<div class="tabs">'. $tabs .'</div>';
       }

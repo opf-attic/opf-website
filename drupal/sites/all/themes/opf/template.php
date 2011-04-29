@@ -54,7 +54,7 @@ function opf_preprocess_page(&$vars) {
   // 1 column
   else {
 
-    $vars['center_classes'] = 'col-center span-22 prepend-1 append-1';
+    $vars['center_classes'] = 'col-center span-23 append-1';
     $vars['body_classes'] .= ' col-1 ';
   }
 

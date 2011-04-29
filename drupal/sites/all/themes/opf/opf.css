@@ -226,6 +226,9 @@ p {
 }
 
 /* margins */
+#header {
+  margin-left: 28px;
+}
 .col-center {
   margin-left: 28px;  
 }
@@ -348,8 +351,8 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
   border-bottom: none;
 }
 .view-bloggers .views-row .picture {
-  float: right;
-  margin-left: 5px;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 .view-bloggers .views-field-name {
   margin-top: 0.5em;
@@ -358,7 +361,8 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
   content: ' by ';
 }
 .view-bloggers .views-field-totalcount, .view-bloggers .views-field-uid {
-  padding-top: 0.3em;
+  padding-top: 0.5em;
+  font-size: 0.9em;
 }
 .view-bloggers .views-field-timestamp {
   display: inline;

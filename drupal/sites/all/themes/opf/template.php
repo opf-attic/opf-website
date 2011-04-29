@@ -32,9 +32,9 @@ function opf_preprocess_page(&$vars) {
   // determine layout
   // 3 columns
   if ($vars['layout'] == 'both') {
-    $vars['left_classes'] = 'col-left span-6';
+    $vars['left_classes'] = 'col-left span-4';
     $vars['right_classes'] = 'col-right span-6 last';
-    $vars['center_classes'] = 'col-center span-10';
+    $vars['center_classes'] = 'col-center span-12';
     $vars['body_classes'] .= ' col-3';
   }
   // 2 columns
@@ -58,7 +58,7 @@ function opf_preprocess_page(&$vars) {
     $vars['body_classes'] .= ' col-1 ';
   }
 
-  $vars['header_classes'] .= ' prepend-1 append-1';
+  $vars['header_classes'] .= ' span-22 ';
 }
 
 function opf_preprocess_node (&$vars) {

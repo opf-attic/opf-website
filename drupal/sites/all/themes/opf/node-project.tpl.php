@@ -1,3 +1,5 @@
+<div style="float:right"><a href="<?php print $field_link[0]['url'] ?>"><?php print $field_logo[0]['view'] ?></a></div>
+
 <div id="node-<?php print $node->nid; ?>" class="node<?php if ($sticky) { print ' sticky'; } ?><?php if (!$status) { print ' node-unpublished'; } ?> clear-block">
 
 <?php if ($page == 0): ?>
@@ -18,23 +20,10 @@
 
   <div class="content clear-block">
 
-  <div style="float:right"><a href="<?php print $field_link[0]['url'] ?>"><?php print $field_logo[0]['view'] ?></a></div>
-
 <?php
  print $node->content['body']['#value'];
 ?>
 
-<p>
-<b>Date:</b>
-<?php
- print content_format('field_date', $field_date[0]);
-?>
-</p>
-<p>
-<?php
- print content_format('field_location', $field_location[0]);
-?>
-</p>
 <p>
 <b>Link:</b>
 <?php

@@ -50,12 +50,10 @@
       <?php print theme('links', $primary_links, array('id' => 'nav', 'class' => 'links')) ?>
     <?php endif; ?>
     </div>
-    <div class="span-20">
-      <?php
-  if ($breadcrumb != '') {
-    print $breadcrumb;
-  }
-      ?>
+    <div class="span-23">
+      <?php if ($breadcrumb != '') : ?>
+        <?php print $breadcrumb; ?>
+      <?php endif; ?>
 	<?php print $header; ?>
 	</div>
   </div>

@@ -83,23 +83,27 @@ div.container { margin: 0 auto; }
 
 #header #nav { 
   float: right;
-	font-size: 16px;
-	padding-top: 24px;
+	font-size: 14px;
+	padding-top: 20px;
 	clear: both;
-	margin-right: 0;
+  margin-right: 20px;
 }
-#header #snav li {
-	padding-right:0px;
+#header li {
+	padding: 0;
+	margin: 0 0 0 1em;
 }
 #header #nav li a {
 	display:inline-block;
 	padding:3px 6px 4px 6px;
 	background-color:#9dd6e9;
 	color: #146B8A;
-	border: 1px solid #177ba0;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+	border:1px solid #9BD5E8;
+	border:1px solid #177ba0;
+	width: 60px;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	behavior: url(border-radius.htc);
 } 
 #header #nav li a:hover {
@@ -121,9 +125,13 @@ div.container { margin: 0 auto; }
 	color:#fff;
 }
 
-#header .breadcrumb {
-  padding-left: 4px;
-  margin-bottom: 0;
+.breadcrumb {
+  color: #aaa;
+  font-size: 0.9em;
+	margin: 0;
+}
+.breadcrumb a {
+  color: #aaa;
 }
 
 #subnav {
@@ -133,7 +141,6 @@ div.container { margin: 0 auto; }
   background-color: #eee;
   font-size: 12px;
   margin-right: 20px;
-	border:1px solid #9BD5E8;
 	border:1px solid #d8d8d8;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -167,13 +174,17 @@ div.container { margin: 0 auto; }
 	color:#177ba0;
 	font-size:1.7em;
 	line-height:1.2em;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0.5em;
 /*	border-bottom:1px solid #439fbd;*/
 }
 .col-center .tabs {
 	font-size:1.0em;
+	margin: 0;
+	float: right;
 }
-.col-center .breadcrumb {
-	font-size:0.7em;
+.col-center .tabs {
 }
 .col-center .item-list {
 	margin-top:2em;
@@ -184,9 +195,12 @@ div.container { margin: 0 auto; }
 	margin: 0 0 2.5em;
 	padding: 0 0 1.917em;
 }
+.col-center .node .content {
+  margin: 0;
+  padding: 0;
+}
 .col-center .node h2 {
-	border:0;
-	margin-bottom:0.5em;
+	margin-bottom:0.75em;
 }
 .col-center .node h2 a {
 	color:#505050;
@@ -209,18 +223,17 @@ p {
   margin-bottom: 0.85em;
 }
 .col-center .node .meta {
-  margin-bottom: 0.75em;
+  margin: 0  0 0.4em 0;
+  padding: 0;
 }
 .col-center .node .meta .submitted {
 	color:#aaa;
-	font-size:0.9em;
 }
 .col-center .node .meta .submitted a,
 .col-center .node .meta .terms a {
 	color:#666;
 }
 .col-center .node .node-links .links a {
-	font-size:0.9em;
 }
 .col-center .comment .picture {
   margin-right: 0.35em;

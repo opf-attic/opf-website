@@ -64,10 +64,6 @@
   
   <div class="<?php print $center_classes; ?>">
     <?php
-      if ($tabs != '') {
-        print '<div class="tabs">'. $tabs .'</div>';
-      }
-
       if ($messages != '') {
         print '<div id="messages">'. $messages .'</div>';
       }
@@ -75,6 +71,10 @@
       if ($title != '') {
         print '<h2>'. $title .'</h2>';
       }      
+
+      if ($tabs != '') {
+        print '<div class="tabs">'. $tabs .'</div>';
+      }
 
       print $help; // Drupal already wraps this one in a class      
 

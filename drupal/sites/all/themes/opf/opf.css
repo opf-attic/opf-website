@@ -182,9 +182,7 @@ div.container { margin: 0 auto; }
 .col-center .tabs {
 	font-size:1.0em;
 	margin: 0;
-	float: right;
-}
-.col-center .tabs {
+	margin-bottom: 0.5em;
 }
 .col-center .item-list {
 	margin-top:2em;

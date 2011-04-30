@@ -192,6 +192,7 @@ div.container { margin: 0 auto; }
 .col-center .node {
 	margin: 0 0 2.5em;
 	padding: 0 0 1.917em;
+/*	border-bottom: none;*/
 }
 .col-center .node .content {
   margin: 0;
@@ -406,4 +407,11 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 .views-field-field-date-value {
   padding: 0 0 0.5em 0;
   text-align: right;  
+}
+
+/* the footer */
+#footer {
+  margin-top: 1em;
+  padding-top: 0.5em;
+  border-top: 1px solid #ccc;
 }

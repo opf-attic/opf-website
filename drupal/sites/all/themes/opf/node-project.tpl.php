@@ -31,17 +31,6 @@
 ?>
 </p>
 
-<p>
-<b>Project Partners:</b>
-</p>
-<ul>
-<?php
- foreach( $field_partners as $partner ) { 
-  print "<li>".content_format('field_partners', $partner)."</li>";
- }
-?>
-</ul>
-
   </div>
 
 <?php

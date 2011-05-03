@@ -378,12 +378,12 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
   font-size: 0.9em;
 }
 .view-bloggers .views-field-timestamp {
-  display: inline;
+  float: right;
   color: red;
 }
 
 /* the recent comments block */
-.view-comments-recent .views-row {
+.view-comments-recent .views-row, .view-upcoming-event-calendar .views-row {
   padding: 0.3em 0 0.5em 0;
   border-bottom: 1px solid #146B8A;
   clear: both;

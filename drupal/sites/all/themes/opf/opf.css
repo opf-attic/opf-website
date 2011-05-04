@@ -314,6 +314,10 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 	text-transform: uppercase;
 	color:#333;
 }
+.col-right h3 a,
+.col-left h3 a {
+	color:#333;
+}
 
 /* left sidebar block overrides: blue background */
 .col-left .block-user {

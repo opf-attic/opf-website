@@ -413,6 +413,18 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
   text-align: right;  
 }
 
+/* The OPF Event Logo block */
+#block-views-events-block_1 {
+	background-color:#fff;
+	border:1px solid #B0DEED;
+}
+.view-events {
+  overflow: hidden;
+  text-align: center;
+}
+.view-events img {
+}
+
 /* the footer */
 #footer {
   margin-top: 1em;

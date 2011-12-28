@@ -50,8 +50,8 @@ a:hover { text-decoration:underline; }
 /* logo */
 h1 {
   padding-top: 16px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 h1 a{
 	width: 128px;
@@ -70,7 +70,8 @@ div.container { margin: 0 auto; }
 /* top navigation (there is the small nav and the larger subnav) */
 #header {
   clear: none;
-  background-color: #fff; 
+  background-color: #fff;
+  margin-bottom: 10px;
 }
 #header a {
 	text-decoration: none;
@@ -84,7 +85,7 @@ div.container { margin: 0 auto; }
 #header #nav { 
   float: right;
 	font-size: 14px;
-	padding-top: 20px;
+	padding-top: 26px;
 	clear: both;
   margin-right: 20px;
 }
@@ -133,7 +134,10 @@ div.container { margin: 0 auto; }
 .breadcrumb a {
   color: #aaa;
 }
-
+#slogan {
+	padding-top: 0;
+	font-family: "NewRegular";
+}
 #subnav {
   float: right;
   background-color: #DAF0F6;
@@ -418,11 +422,11 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 	background-color:#fff;
 	border:1px solid #B0DEED;
 }
-.view-events {
+#block-views-events-block_1 .view-events {
   overflow: hidden;
   text-align: center;
 }
-.view-events img {
+#block-views-events-block_1 .view-events img {
 }
 
 /* the footer */

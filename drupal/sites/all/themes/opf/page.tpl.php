@@ -51,6 +51,11 @@
     <?php endif; ?>
     </div>
     <div class="span-23">
+      <?php if ($site_slogan != '') : ?>
+       <div id="slogan">
+       <?php print $site_slogan; ?>
+       </div>
+      <?php endif; ?>
       <?php if ($breadcrumb != '') : ?>
         <?php print $breadcrumb; ?>
       <?php endif; ?>

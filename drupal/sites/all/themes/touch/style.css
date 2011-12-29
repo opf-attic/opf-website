@@ -1,5 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 
+@font-face {
+    font-family: 'New Regular';
+    src: url('hit-the-road-webfont.eot');
+    src: url('hit-the-road-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hit-the-road-webfont.woff') format('woff'),
+         url('hit-the-road-webfont.ttf') format('truetype'),
+         url('hit-the-road-webfont.svg#NewRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* Default Style
 ------------------------------------------------*/
 html, body, div, span, object, iframe,
@@ -109,8 +121,11 @@ padding: 3px 4px;
 ------------------------------------------------*/
 body {
 background: #e8e8e8;
+background: #f4f4f4;
+background: #fafafa;
 color: #323232;
 font-family: Lucida Grande, Verdana, Arial, sans-serif;
+font-family: 'Nimbus Sans', 'Nimbus Sans L', FreeSans, 'Liberation Sans', 'Dejavu Sans Condensed', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
 font-size: 12px;
 line-height: 18px;
 width: 980px;
@@ -244,7 +259,8 @@ margin-right: 10px;
 float: right;
 padding: 0;
 margin: 0;
-margin-top: 22px;
+margin-top: 23px;
+clear: right;
 }
 #header-top .search-box .form-text{
 color: #a7a7a7;
@@ -268,24 +284,32 @@ background: #676767;
 /* Header and Main menu
 ------------------------------------------------*/
 #header {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 #main-menu{
 width: 980px;
 clear: both;
-background: #3e3e3e;
 height: 40px;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 12px;
+font-family: "Nimbus Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight: bold;
-border-radius: 4px;
-text-transform: uppercase;
 position: relative;
+text-transform: uppercase;
+/*
+border-radius: 4px;
+border:1px solid #177ba0;
+background-color:#9dd6e9; #e9f7f7; #d2f0f0; #bbe5e9;      #9dd6e9; #60adc7; #429fbe; #1e7ea4;
+border:1px solid #177ba0;
+*/
+border-radius: 5px;
+background-color:#9dd6e9;
+background: #3e3e3e;
 }
 
 #main-menu a {
 display: block;
+color: #177ba0;
 color: #cacaca;
 }
 
@@ -322,6 +346,11 @@ top: 100%;
 left: 0;
 z-index: 598;
 width: 160px;
+background-color:#9dd6e9;
+border:1px solid #177ba0;
+border-radius: 5px;
+  background: #303030;
+  border:1px solid #585858;
 }
 
 #main-menu ul ul li {
@@ -355,15 +384,20 @@ padding: 7px 15px;
 
 #main-menu ul a:link,
 #main-menu ul a:visited { 
+color: #177ba0;
 color: #cacaca;
 text-decoration: none; 
 }
 #main-menu ul a:hover,
 #main-menu ul a.active,
-#main-menu ul li.active-trail a { color: #fff; }
+#main-menu ul li.active-trail a { 
+color: #177ba0;
+color: #fff;
+}
 
 #main-menu li.expanded ul a, 
 #main-menu li.leaf ul a { 
+color: #177ba0;
 color: #474747;
 }
 #main-menu ul li.expanded { 
@@ -373,13 +407,14 @@ background:transparent url('images/expanded-arrow.png') no-repeat center right;
 #main-menu li.expanded ul a.active,
 #main-menu li.leaf ul a:hover,
 #main-menu li.leaf ul a.active { 
+color: #177ba0;
 color: #fff;
 }
 
 #main-menu ul ul li:hover,
 #main-menu ul ul li.active-trail,
 #main-menu ul ul li.last a {
- 
+  border-bottom: none !important;
 }
 
 #main-menu ul ul ul li.last a {
@@ -397,26 +432,64 @@ color: #fff;
 }
 
 #main-menu ul ul li {
-  background: #303030;
+  /*background: #303030;*/
   padding-top: 1px;
 }
 
 #main-menu ul ul li.expanded {
+background-color:#9dd6e9;
   background: #303030 url('images/expanded-arrow-right.png') no-repeat center right;
 }
 
 #main-menu ul ul a:link,
 #main-menu ul ul a:visited { 
+color: #177ba0;
 color: #cacaca;
 }
 
 #main-menu ul ul a {
+border-bottom:1px solid #177ba0;
   border-bottom: 1px solid #585858;
 }
 
 #main-menu ul ul ul a {
+border-bottom:1px solid #177ba0;
   border-bottom: 1px solid #585858;
 }
+
+#secondary-menu { 
+  float: right;
+  background-color: #DAF0F6;
+  background-color: #B0DEED;
+  background-color: #eee;
+  font-size: 12px;
+  margin: 0px;
+        border:1px solid #d8d8d8;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+        behavior: url(border-radius.htc);
+}
+#secondary-menu a {
+        color: #146B8A;
+        color: #666;
+}
+#secondary-menu ul {
+  padding: 2px 4px;
+  margin: 0;
+}
+#secondary-menu ul li.leaf {
+list-style: none;
+list-style-image: none;
+float: left;
+}
+#secondary-menu li {
+        padding: 5px 4px 6px 4px;
+}
+
 /* breadcrumb
 ------------------------------------------------*/
 .breadcrumb {
@@ -436,12 +509,13 @@ text-decoration: none;
 .node {
 
 }
-.node-teaser{
+.front .node-teaser{
 margin-bottom: 40px;
 margin-right: 20px;
 float: left;
 width: 300px;
 height: 500px;
+overflow: hidden;
 }
 
 
@@ -449,12 +523,16 @@ height: 500px;
 ------------------------------------------------*/
 #content-body {
 background: #f4f4f4;
+background: white;
 width: 960px;
 padding: 0 10px 0 10px;
 float: left;
 margin-top: 8px;
 border-radius: 7px;
 border: 1px solid #dbdbdb;
+border:1px solid #177ba0;
+border:1px solid #9BD5E8;
+border-color: #D0D0D0;
 }
 
 /* main post content
@@ -500,6 +578,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 }
 #sidebar-first a, #sidebar-second a{
 color: #636363;
+color: #146B8A;
 }
 #sidebar-first a:hover, #sidebar-second a:hover{
 color: #0080aa;
@@ -508,6 +587,11 @@ color: #0080aa;
 background: #ededee;
 border-radius: 5px;
 padding: 0px 0px 4px 6px;
+background-color: #D3EBF4;
+/* Dark Set:    1E7FA4 30667B 0A506B 51AED2 73B8D2 */
+/* Light Set:   73B8D2 688F9E 256D89 9AD3E9 AFD9E9 */
+/* Lighter Set: AFD9E9 8EA6AF 397D97 C6E7F4 D3EBF4 */
+border:1px solid #AFD9E9;
 }
 #sidebar-first ul, #sidebar-second ul{
 margin: 0;
@@ -519,6 +603,7 @@ list-style: none;
 list-style-image: none;
 background: url(images/sidebar-arrow.png) no-repeat left center;
 border-bottom: 1px dotted #d4d2d2;
+border-bottom: 1px dotted #AFD9E9;
 padding: 4px 0 4px 17px;
 }
 
@@ -837,6 +922,12 @@ color: #000;
 .block  p{
   margin-bottom: 2px;
 }
+.block h2 {
+  margin-top: 0;
+}
+.block a {
+ color: #146B8A;
+}
 /* Footer
 ------------------------------------------------*/
 #footer {
@@ -869,6 +960,8 @@ list-style-image: none;
 background: url(images/sidebar-arrow.png) no-repeat left center;
 border-bottom: 1px dotted #464646;
 padding: 4px 0 4px 17px;
+}
+#footer .block {
 }
 .first-footer{
 width: 230px;

@@ -74,6 +74,12 @@
 <?php endif; ?>
 <div id="site-slogan"><?php if ($site_slogan): ?><?php print $site_slogan; ?><?php endif; ?></div><!--site slogan-->
 </div><!--end logo-->
+<div id="secondary-menu">
+    <?php 
+	$secondary_menu_tree = menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu')); 
+	print drupal_render($secondary_menu_tree);
+	?>
+</div><!-- end secondary-menu -->
  <?php if ($page['search_box']): ?><!-- / start search box region -->
     <div class="search-box">
       <?php print render($page['search_box']); ?>
@@ -82,7 +88,9 @@
  <?php if (theme_get_setting('social_icons')): ?>
 <ul id="header-social">
 <li><a href="http://www.twitter.com/<?php echo theme_get_setting('twitter_username'); ?>" target="_blank" rel="me"><img src="<?php global $base_url; echo $base_url.'/'.$directory.'/'; ?>/images/twitter.png" alt="twitter"/></a></li>
+<!--
 <li><a href="http://www.facebook.com/<?php echo theme_get_setting('facebook_username'); ?>" target="_blank" rel="me"><img src="<?php global $base_url; echo $base_url.'/'.$directory.'/'; ?>/images/facebook.png" alt="facebook"/></a></li>
+-->
 <li><a href="<?php print $front_page; ?>rss.xml"><img src="<?php global $base_url; echo $base_url.'/'.$directory.'/'; ?>/images/rss.png" alt="RSS"/></a></li>
 </ul><!--end header-social-->
 <?php endif; ?>

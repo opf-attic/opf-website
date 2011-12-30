@@ -969,9 +969,9 @@ width: 230px;
 float: left;
 }
 .first-footer .block, .second-footer .block, .third-footer .block, .fourth-footer .block {
-  background: white;
+  /*background: white;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc;*/
 }
 .second-footer{
 width: 230px;
@@ -987,6 +987,16 @@ margin-left: 20px;
 }
 #block-views-members-block-1 .content {
 text-align: center;
+}
+#block-views-bloggers-block-1 img {
+  padding: 3px;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  float: right;
+}
+#block-views-bloggers-block-1 .views-field-uid {
+  clear: both;
 }
 #copyright{
 border-top: 1px dashed #656565;

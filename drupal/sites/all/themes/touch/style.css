@@ -522,6 +522,7 @@ overflow: hidden;
 /* content body (sidebars and main content)
 ------------------------------------------------*/
 #content-body {
+color:#505050;
 background: #f4f4f4;
 background: white;
 width: 960px;
@@ -1087,6 +1088,7 @@ text-shadow: 1px 1px #fff;
 }
 /* Forum
 ------------------------------------------------*/
+/*
 .field-name-taxonomy-forums div{
 display: inline;
 margin-top: 4px;
@@ -1140,6 +1142,7 @@ height: 35px;
 font-family: 'Ubuntu Condensed', sans-serif;
 font-size: 16px;
 }
+*/
 /* User picture
 ------------------------------------------------*/
 .user-picture{

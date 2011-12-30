@@ -514,7 +514,7 @@ margin-bottom: 40px;
 margin-right: 20px;
 float: left;
 width: 300px;
-height: 500px;
+height: 300px;
 overflow: hidden;
 }
 
@@ -586,7 +586,7 @@ color: #0080aa;
 #sidebar-first .block, #sidebar-second .block{
 background: #ededee;
 border-radius: 5px;
-padding: 0px 0px 4px 6px;
+padding: 0px 3px 4px 3px;
 background-color: #D3EBF4;
 /* Dark Set:    1E7FA4 30667B 0A506B 51AED2 73B8D2 */
 /* Light Set:   73B8D2 688F9E 256D89 9AD3E9 AFD9E9 */
@@ -962,15 +962,31 @@ border-bottom: 1px dotted #464646;
 padding: 4px 0 4px 17px;
 }
 #footer .block {
+margin: 4px 0px;
 }
 .first-footer{
 width: 230px;
 float: left;
 }
+.first-footer .block, .second-footer .block, .third-footer .block, .fourth-footer .block {
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 .second-footer{
 width: 230px;
 float: left;
 margin-left: 20px;
+}
+#block-views-events-block-1 {
+  text-align: center;
+  background: white !important;
+}
+#block-views-members-block-1 {
+  background: white !important;
+}
+#block-views-members-block-1 .content {
+text-align: center;
 }
 #copyright{
 border-top: 1px dashed #656565;

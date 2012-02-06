@@ -659,6 +659,7 @@ font-weight: normal;
 
 .submitted{
 background: #dfdddd;
+background: #f8f8f8;
 padding: 4px 9px;
 border-radius: 4px;
 color: #383838;
@@ -723,6 +724,7 @@ font-size: 10px;
 }
 .links li a{
 background: #d3d1d1;
+background: #eee;
 padding: 4px 5px;
 border-radius: 4px;
 color: #383838;
@@ -1082,9 +1084,13 @@ display: none;
 }
 .item-list .pager li {
 background: #cfcfcf;
+background: #eee;
 border-radius: 3px;
 margin-right: 4px;
 text-shadow: 1px 1px #fff;
+}
+.item-list .pager li.pager-current {
+background: #cfcfcf;
 }
 /* Forum
 ------------------------------------------------*/
@@ -1154,4 +1160,9 @@ font-size: 16px;
 background:url(images/goup.png) no-repeat; 
 width:53px; 
 height:53px; 
+}
+
+#block-block-19 {
+padding: 0 !important;
+border: none !important;
 }

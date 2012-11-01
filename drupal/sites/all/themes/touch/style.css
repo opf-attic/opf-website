@@ -1175,3 +1175,14 @@ height:53px;
 padding: 0 !important;
 border: none !important;
 }
+#block-block-23 {
+border: 1px solid #AFD9E9;
+border-radius: 5px;
+padding: 1em;
+text-align: center;
+background: #D3EBF4;
+}
+#block-block-23 p {
+  font-size: 1.5em;
+  color: black;
+}

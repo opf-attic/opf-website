@@ -586,7 +586,7 @@ color: #146B8A;
 #sidebar-first a:hover, #sidebar-second a:hover{
 color: #0080aa;
 }
-#sidebar-first .block, #sidebar-second .block{
+#sidebar-first .block, #sidebar-second .block, #highlighted .block{
 background: #ededee;
 border-radius: 5px;
 padding: 0px 3px 4px 3px;
@@ -595,6 +595,13 @@ background-color: #D3EBF4;
 /* Light Set:   73B8D2 688F9E 256D89 9AD3E9 AFD9E9 */
 /* Lighter Set: AFD9E9 8EA6AF 397D97 C6E7F4 D3EBF4 */
 border:1px solid #AFD9E9;
+}
+#highlighted .block {
+  padding: 0.5em 1em;
+  text-align: center;
+}
+#highlighted .block h2 {
+  margin: 0;
 }
 #sidebar-first ul, #sidebar-second ul{
 margin: 0;
@@ -668,7 +675,8 @@ color: #383838;
 text-shadow: 1px 1px #fff;
 clear: both;
 display: block;
-margin-bottom: 2px;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
 }
 #main .content {
 color: #7e7e7e;
@@ -1079,12 +1087,19 @@ color: #949494;
 display:inline;
 background: #e5e5e5;
 }
-.comment .user-picture{
-float: left;
+.user-picture{
 padding: 4px;
 border: 1px solid #d9d9d9;
+background: white;
 margin-right: 7px;
 margin-bottom: 7px;
+}
+.content .user-picture{
+float: right;
+margin-left: 1em;
+}
+.comment .user-picture{
+float: left;
 }
 .comment-new-comments{
 display: none;

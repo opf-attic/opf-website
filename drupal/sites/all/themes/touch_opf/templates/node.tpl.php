@@ -81,11 +81,15 @@
 	</header>
 	
 	<?php
+        print $user_picture;
         hide($content['comments']);
         hide($content['links']);
         hide($content['field_tags']);
         print render($content);
-	echo '<div style="margin-bottom: 4em; display: block;"><span style="float: left;"><a href="/'.$content['links']['node']['#links']['node-readmore']['href'].'">read more</a></span><span style="float:right;"><i>'.$submitted.'</i></span></div>';
+        print render($content['comments']);
+        print render($content['links']);
+        print render($content['field_tags']);
+	print '<div class="submitted" style="clear: left;">'.$submitted.'</div>';
 	return;
 }?>
 <?php if (!$page): ?>
@@ -100,16 +104,13 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
   
-      <?php if ($display_submitted): ?>
-        <span class="submitted"><?php print $submitted; ?></span>
-      <?php endif; ?>
-
     <?php if (!$page): ?>
       </header>
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
+      print $user_picture;
       // Hide comments, tags, and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
@@ -124,6 +125,10 @@
       <?php print render($content['links']); ?>
     </footer>
   <?php endif; ?>
+
+      <?php if ($display_submitted): ?>
+        <span class="submitted"><?php print $submitted; ?></span>
+      <?php endif; ?>
 
   <?php print render($content['comments']); ?>
 <?php if (!$page): ?>

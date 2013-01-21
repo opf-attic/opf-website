@@ -2,7 +2,7 @@
 /**
 Insert option to enter facebook and twitter username
 */
-function touch_form_system_theme_settings_alter(&$form, &$form_state) {
+function touch_opf_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['touch_settings']['twitter_username'] = array(
     '#type' => 'textfield',
     '#title' => t('Twitter Username'),

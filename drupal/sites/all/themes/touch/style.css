@@ -512,10 +512,12 @@ text-decoration: none;
 .front .node-teaser{
 margin-bottom: 40px;
 margin-right: 20px;
+/*
 float: left;
 width: 300px;
 height: 320px;
 overflow: hidden;
+*/
 }
 
 
@@ -794,7 +796,7 @@ padding: 4px 5px;
 
 .item-list ul {
   margin: 0;
-  padding: 0 0 0 1.5385em;
+  padding: 0 0 2em 1.5385em;
 }
 
 .item-list ul li {

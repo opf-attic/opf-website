@@ -74,6 +74,20 @@
  * @see template_process()
  */
 ?>
+<?php if ($teaser) {
+        ?>
+        <header>
+	<h2 style="clear: both;" class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+	</header>
+	
+	<?php
+        hide($content['comments']);
+        hide($content['links']);
+        hide($content['field_tags']);
+        print render($content);
+	echo '<div style="margin-bottom: 4em; display: block;"><span style="float: left;"><a href="/'.$content['links']['node']['#links']['node-readmore']['href'].'">read more</a></span><span style="float:right;"><i>'.$submitted.'</i></span></div>';
+	return;
+}?>
 <?php if (!$page): ?>
   <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <?php endif; ?>

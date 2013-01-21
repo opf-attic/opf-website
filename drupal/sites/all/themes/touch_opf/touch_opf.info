@@ -1,8 +1,8 @@
-name = Touch
+name = Touch OPF
 description = Touch is a premium Drupal 7 theme.
-package = Core
 core = 7.x
-engine = phptemplate
+base theme = touch
+
 stylesheets[all][] = style.css
 scripts[] = js/scrolltopcontrol.js
 regions[search_box]     = Search Box
@@ -27,13 +27,9 @@ features[] = comment_user_verification
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
-settings[twitter_username]   = techyag
-settings[facebook_username]  = techyag
+settings[twitter_username]   = openplanets
+settings[facebook_username]  = openplanets
 settings[footer_copyright]   = 1
 settings[social_icons]       = 1
-; Information added by drupal.org packaging script on 2011-12-16
-version = "7.x-1.5"
-core = "7.x"
-project = "touch"
-datestamp = "1324058743"
+
 

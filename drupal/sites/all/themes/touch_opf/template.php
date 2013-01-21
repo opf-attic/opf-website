@@ -3,7 +3,7 @@
  * Implements hook_html_head_alter().
  * This will overwrite the default meta character type tag with HTML5 version.
  */
-function touch_html_head_alter(&$head_elements) {
+function touch_opf_html_head_alter(&$head_elements) {
   $head_elements['system_meta_content_type']['#attributes'] = array(
     'charset' => 'utf-8'
   );
@@ -12,7 +12,7 @@ function touch_html_head_alter(&$head_elements) {
 /**
  * Insert themed breadcrumb page navigation at top of the node content.
  */
-function touch_breadcrumb($variables) {
+function touch_opf_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     // Use CSS to hide titile .element-invisible.
@@ -27,7 +27,7 @@ function touch_breadcrumb($variables) {
 /**
  * Override or insert variables into the page template.
  */
-function touch_preprocess_page(&$vars) {
+function touch_opf_preprocess_page(&$vars) {
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
@@ -65,7 +65,7 @@ function touch_preprocess_page(&$vars) {
 /**
  * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
  */
-function touch_menu_local_tasks(&$variables) {
+function touch_opf_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {
@@ -86,7 +86,7 @@ function touch_menu_local_tasks(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function touch_preprocess_node(&$variables) {
+function touch_opf_preprocess_node(&$variables) {
   $variables['submitted'] = t('By !username on !datetime', array('!username' => $variables['name'], '!datetime' => $variables['date']));
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
